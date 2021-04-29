@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #28c079;
+  color: black;
+}
+.header h1 {
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(56, 84, 241);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(56, 84, 241);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: rgb(56, 84, 241);
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(204, 202, 202);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav-right{
+  float:right;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+.navbar .search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 9px;
+  margin-right: 10px;
+  margin-left:5px ;
+  background: rgb(221, 221, 221);
+  font-size: 15px;
+  border: red;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: rgb(79, 23, 235);
+}
+
+.button2{
+  padding: 6px 10px;
+  align-self: start;
+  margin-right: 10px;
+  margin-left:5px ;
+  background: #ddd;
+  font-size: 15px;
+  border: red;
+  cursor: pointer;
+  
+}
+
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 20%;
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 80%;
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.boder{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.foot1{
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+}
+.foot2{
+  text-align: left;
+  background: #ddd;
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+section#about {
+    width: 100%;
+    height: 509px;
+    background: #252525;
+    position: absolute;
+    top: 1800px;
+    left: 0;
+}
+
+div.about {
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>EdwebGo</h1>
+  <p>A <b>Book </b> share</p>
+</div>
+
+<div class="navbar">
+  <a href="home1.html" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Buy
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Sell
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">search box</a>
+      <a href="#">Ds</a>
+      <a href="#">Poetry</a>
+      <a href="#">Homeopathy</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Rent
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="rent.html">Get</a>
+      <a href="rent.html">Give</a>
+    </div>
+  </div> 
+   
+   <a href="#">Map U</a>
+   <div class="nav-right">
+    <div class="dropdown">
+      <button class="dropbtn">Profile
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="login.html">Logout</a>
+      </div>
+    </div>
+  </div> 
+   <a href="#" class="right">Cart</a>
+   <div class="search-container">
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit" value="Submit">🔍</button><i class="search-container"></i></button>
+    </form>
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Recently Searched</h2>
+    <h5>Book name:</h5>
+    <img src="images/b5.jpg" alt="joker" style="width:200px" style="height:100px">
+    <p>details and more info</p>
+    <h3>More books</h3>
+    <p>similar books</p>
+    <img src="images/b10.jpg" alt="joker" style="width:200px" style="height:100px">
+    <h5>book name:</h5><br>
+    <img src="images/b6.png" alt="joker" style="width:200px" style="height:100px">
+    <h5>book name:</h5><br>
+    <img src="images/b18.jpg" alt="joker" style="width:200px" style="height:100px">
+    <h5>book name:</h5>
+  </div>
+   <div class="main">
+     <h2>New uploads:</h2>
+     <h5>Title description, Sep 2, 2017</h5>
+     <div class="row">
+      <div class="column">
+        <img src="images/b16.jpeg" alt="joker" style="width:300px" style="height:100px">
+      </div>
+      <div class="column">
+        <img src="images/b14.jpeg" alt="Forest" style="width:300px">
+      </div>
+      <div class="column">
+        <img src="images/b15.jpg" alt="Mountains" style="width:300px">
+      </div>
+     </div>
+     <p>Some text..</p>
+     <p> matter</p>
+     
+     <h2>FRICTIONAL:</h2>
+     <h5>, Sep 2, 2017</h5>
+     <div class="row">
+      <div class="column">
+        <img src="images/b7.jpg" alt="sita" style="width:300px">
+      </div>
+      <div class="column">
+        <img src="images/b11.jpg" alt="Forest" style="width:300px">
+      </div>
+      <div class="column">
+        <img src="images/b3.jfif" alt="Mountains" style="width:300px">
+      </div>
+     </div>
+     <p>Some text..</p>
+     <p> matter</p></br>
+     
+     <h2>Doctors:</h2>
+     <h5>Title description, Sep 2, 2017</h5>
+     <div class="row">
+      <div class="column">
+        <img src="images/b12.jpg" alt="joker" style="width:300px">
+      </div>
+      <div class="column">
+        <img src="images/b9.jpg" alt="Forest" style="width:300px">
+      </div>
+      <div class="column">
+        <img src="images/b8.jpg" alt="Mountains" style="width:300px">
+      </div>
+     </div>
+     <p>Some text..</p>
+     <p> matter</p>
+    </div>
+  
+</div>
+
+<div class="footer">
+  <h2>Quick links</h2>
+</div>
+<div class="row">
+  <div class="column">
+    <h5><a href="#">Contact us</a></h5>
+    <h5><a href="#">About us</a></h5>
+    <h5><a href="#">FAQ</a></h5>
+  </div>
+ <div class="column">
+  <h5><a href="#">Privacy</a></h5>
+  <h5><a href="#">Terms & Conditions</a></h5>
+  <h5><a href="#">Patner with us</a></h5>
+ </div>
+ <div class="column">
+   <h5>Subscribe Us:</h5>
+  <input type="email" id="email:email" cols="30" rows="2" placeholder="email address" required>  
+ </input> 
+  <button type="submit" value="Submit">Submit</button>
+ </div>
+</div>
+
+<footer><center>
+  <p>© 2021 coding_team</p></center>
+</footer>
+
+</body>
+</html>
